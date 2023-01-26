@@ -3,6 +3,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../sidevar.dart';
+
 class LOAD_collaterol  extends StatefulWidget{
 
 
@@ -17,12 +19,13 @@ class _LOADcollaterolState  extends State<LOAD_collaterol>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.teal,
+        drawer: sideNav(),
+        backgroundColor: Colors.green,
         appBar: AppBar(
           title: Text('collaterol_load page'),
 
         ),
-        body: Padding(
+        body: SingleChildScrollView(
             padding: const EdgeInsets.all(16.0),
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,

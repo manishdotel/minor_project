@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:minor_project/sidevar.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -13,11 +14,12 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal,
+      drawer: sideNav(),
+      backgroundColor: Colors.green,
       appBar: AppBar(
         title: Text('PROFILE'),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -25,7 +27,23 @@ class _ProfileState extends State<Profile> {
               children: [
                 Row(
                   children: [
-                    Text('COMPANY NAME:',
+                    Text('Company name:', style: TextStyle(fontSize: 20, color: Colors.black87)),
+                    SizedBox(width: 30),
+                    Center(
+                      child: Container(
+                        width: 200,
+                        child: TextField(
+                          textAlign: TextAlign.center,
+
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(height:50),
+                Row(
+                  children: [
+                    Text('Company Email:',
                         style: TextStyle(fontSize: 20, color: Colors.black87)),
                     SizedBox(width: 30),
                     Center(
@@ -42,7 +60,7 @@ class _ProfileState extends State<Profile> {
                 SizedBox(height:50),
                 Row(
                   children: [
-                    Text('COMPANY EMAIL:',
+                    Text('Company_location:',
                         style: TextStyle(fontSize: 20, color: Colors.black87)),
                     SizedBox(width: 30),
                     Center(
@@ -59,24 +77,7 @@ class _ProfileState extends State<Profile> {
                 SizedBox(height:50),
                 Row(
                   children: [
-                    Text('COMPANY LOCATION:',
-                        style: TextStyle(fontSize: 20, color: Colors.black87)),
-                    SizedBox(width: 30),
-                    Center(
-                      child: Container(
-                        width: 200,
-                        child: TextField(
-                          textAlign: TextAlign.center,
-
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height:50),
-                Row(
-                  children: [
-                    Text('COMPANY NUMBER:',
+                    Text('Company_no:',
                         style: TextStyle(fontSize: 20, color: Colors.black87)),
                     SizedBox(width: 30),
                     Center(

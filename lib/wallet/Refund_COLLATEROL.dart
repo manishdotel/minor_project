@@ -3,6 +3,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../sidevar.dart';
+
 class REFUND  extends StatefulWidget{
 
 
@@ -16,13 +18,15 @@ class _REFUNDState  extends State<REFUND>{
   final List<String> _categories = ['None','esewa', 'ime pay', 'khalti', 'bank transfer',];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.teal,
+    return Scaffold (
+
+        drawer: sideNav(),
+        backgroundColor: Colors.green,
         appBar: AppBar(
-          title: Text('refund_collaterol_load page'),
+          title: Text(' refundpage'),
 
         ),
-        body: Padding(
+        body: SingleChildScrollView(
             padding: const EdgeInsets.all(16.0),
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -30,28 +34,10 @@ class _REFUNDState  extends State<REFUND>{
                 children: [
                   Row(
                     children: [
-                      Text('Input refund amount:', style: TextStyle(
-                          fontSize: 20, color: Colors.black87)),
-                      SizedBox(width: 30),
-                      Center(
-                        child: Container(
-                          width: 200,
-                          child: TextField(
-                            textAlign: TextAlign.center,
-                            decoration: InputDecoration(
-                                hintText: 'refund in nrs', border: null),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 50),
-                  Row(
-                    children: [
-                      Text('Select Payment method:',style: TextStyle(fontSize: 20,color: Colors.black87),),
+                      const Text('Select payment request :',style: TextStyle(fontSize: 20,color: Colors.black87),),
                       SizedBox(width: 30),
                       DropdownButton(
-                        hint: Text('Select Payment method'), // this will display the hint
+                        hint: const Text('Select payment request :'), // this will display the hint
                         underline: null,
                         style: TextStyle(fontSize: 20,color: Colors.black87),
                         value:_selectedCategory,
@@ -70,6 +56,25 @@ class _REFUNDState  extends State<REFUND>{
                     ],
                   ),
                   SizedBox(height:50),
+
+                  Row(
+                    children: [
+                      Text('Input refund amount:', style: TextStyle(
+                          fontSize: 20, color: Colors.black87)),
+                      SizedBox(width: 30),
+                      Center(
+                        child: Container(
+                          width: 200,
+                          child: TextField(
+                            textAlign: TextAlign.center,
+                            decoration: InputDecoration(hintText: 'refund in nrs', border: null),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 50),
+
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

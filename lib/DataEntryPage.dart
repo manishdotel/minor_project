@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:minor_project/sidevar.dart';
 
 
 class DataEntryPage extends StatefulWidget {
@@ -20,12 +21,13 @@ class _DataEntryPageState extends State<DataEntryPage> {
 
     return Scaffold
       (
-      backgroundColor: Colors.teal,
+      drawer: sideNav(),
+      backgroundColor: Colors.green,
       appBar: AppBar(
         title: Text('Data Entry'),
 
       ),
-      body: Padding(
+      body: SingleChildScrollView(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -89,7 +91,7 @@ class _DataEntryPageState extends State<DataEntryPage> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.green,
                                 title: Text("order"),
                                 content: Text("You'll be notified soon . "),
                                 actions: [

@@ -85,7 +85,7 @@ class _payPageState extends State<payPage> {
                       _showDialog = true;
                     });
                   },
-                  child: Text('Make PAY Request'),
+                  child: Text('Make PAY money'),
                 ),
                 SizedBox(height: 10),
                 ElevatedButton(
@@ -100,7 +100,7 @@ class _payPageState extends State<payPage> {
                 _showDialog
                     ? AlertDialog(
                   title: Text(" PAY  Successful"),
-                  content: Text("Your request for release has been sent."),
+                  content: Text("Your collaterol money is reduced and make only for pay amount."),
                   actions: <Widget>[
                     ElevatedButton(
                       onPressed: () {
