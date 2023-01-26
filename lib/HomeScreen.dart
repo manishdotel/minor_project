@@ -51,52 +51,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: sideNav(),
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text('Home Page'),
       ),
-       /* centerTitle: true,
-        actions: [
-          IconButton(
-            icon: Icon(Icons.person_pin),
-            onPressed: () {},
-          ),
-        ],
-      ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            UserAccountsDrawerHeader(
-              accountName: Text('User'),
-              accountEmail: Text('user@email.com'),
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage(
-                  'https://pbs.twimg.com/profile_images/1307731275781177344/k5aVBG5Z_400x400.jpg',
-                ),
-              ),
-            ),
-            ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Home'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.supervised_user_circle_outlined),
-              title: Text('PROFILE'),
-            ),
-            ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Settings'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.exit_to_app),
-              title: Text('Logout'),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),*/
       body: Center(
         child: Text('business order items are displayed here'),
       ),
@@ -107,20 +65,20 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.green,
 
 
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
             label: 'Data',
-            backgroundColor: Colors.white,
+            backgroundColor: Colors. green,
 
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.wallet),
             label: 'wallet',
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.green,
           ),
 
         ],
