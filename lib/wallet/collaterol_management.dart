@@ -29,6 +29,7 @@ class _collaterolState  extends State<collaterol>  {
 
       appBar: AppBar(
         title: Text('collaterol'),
+        backgroundColor: Colors.green,
       ),
       body: ListView(
         children: <Widget>[

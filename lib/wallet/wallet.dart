@@ -27,6 +27,7 @@ class _WalletPageState  extends State<WalletPage>  {
 
       appBar: AppBar(
         title: Text('wallet'),
+        backgroundColor: Colors.green,
       ),
       body: ListView(
         children: <Widget>[

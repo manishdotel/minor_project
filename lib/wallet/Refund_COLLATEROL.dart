@@ -21,9 +21,10 @@ class _REFUNDState  extends State<REFUND>{
     return Scaffold (
 
         drawer: sideNav(),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.grey,
         appBar: AppBar(
           title: Text(' refundpage'),
+          backgroundColor: Colors.green,
 
         ),
         body: SingleChildScrollView(
@@ -35,7 +36,7 @@ class _REFUNDState  extends State<REFUND>{
                   Row(
                     children: [
                       const Text('Select payment request :',style: TextStyle(fontSize: 20,color: Colors.black87),),
-                      SizedBox(width: 30),
+                      SizedBox(width: 10),
                       DropdownButton(
                         hint: const Text('Select payment request :'), // this will display the hint
                         underline: null,
@@ -61,10 +62,10 @@ class _REFUNDState  extends State<REFUND>{
                     children: [
                       Text('Input refund amount:', style: TextStyle(
                           fontSize: 20, color: Colors.black87)),
-                      SizedBox(width: 30),
+                      SizedBox(width: 20),
                       Center(
                         child: Container(
-                          width: 200,
+                          width: 150,
                           child: TextField(
                             textAlign: TextAlign.center,
                             decoration: InputDecoration(hintText: 'refund in nrs', border: null),

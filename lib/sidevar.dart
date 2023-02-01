@@ -25,7 +25,7 @@ class sideNav extends StatelessWidget {
 
           ),
           ListTile(
-            leading: Icon(Icons.supervised_user_circle_outlined),
+            leading: Icon(Icons.home),
             title: Text('Home'),
             onTap: () => {
               Navigator.push(context,

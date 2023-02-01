@@ -20,9 +20,10 @@ class _LOADcollaterolState  extends State<LOAD_collaterol>{
   Widget build(BuildContext context) {
     return Scaffold(
         drawer: sideNav(),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.grey,
         appBar: AppBar(
           title: Text('collaterol_load page'),
+          backgroundColor: Colors.green,
 
         ),
         body: SingleChildScrollView(
@@ -38,7 +39,7 @@ class _LOADcollaterolState  extends State<LOAD_collaterol>{
                       SizedBox(width: 30),
                       Center(
                         child: Container(
-                          width: 200,
+                          width: 150,
                           child: TextField(
                             textAlign: TextAlign.center,
                             decoration: InputDecoration(
@@ -52,7 +53,7 @@ class _LOADcollaterolState  extends State<LOAD_collaterol>{
                   Row(
                     children: [
                       Text('Select Payment method:',style: TextStyle(fontSize: 20,color: Colors.black87),),
-                      SizedBox(width: 30),
+                      SizedBox(width: 10),
                       DropdownButton(
                         hint: Text('Select Payment method'), // this will display the hint
                         underline: null,

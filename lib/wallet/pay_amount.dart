@@ -165,7 +165,8 @@ class _payPageState extends State<payPage> {
                                 builder: (context) => AlertDialog(
                                   title: Text("Error"),
                                   content: Text(
-                                      "You cannot withdraw more than the released amount"),
+                                      "You  havenoy pay the requirable amt"
+                                          ),
                                   actions: <Widget>[
                                     ElevatedButton(
                                       child: Text("OK"),
@@ -188,9 +189,9 @@ class _payPageState extends State<payPage> {
                             showDialog(
                               context: context,
                               builder: (context) => AlertDialog(
-                                title: Text("Withdraw Successful"),
+                                title: Text(" pay Successful"),
                                 content: Text(
-                                    "Rs$_withdrawAmount has been withdrawn"),
+                                    "Rs$_withdrawAmount has been payed"),
                                 actions: <Widget>[
                                   ElevatedButton(
                                     child: Text("OK"),
@@ -202,7 +203,7 @@ class _payPageState extends State<payPage> {
                               ),
                             );
                           },
-                          child: Text("Withdraw"),
+                          child: Text("PAY"),
                         )
                       ],
                     ))

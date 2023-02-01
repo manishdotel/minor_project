@@ -22,9 +22,10 @@ class _DataEntryPageState extends State<DataEntryPage> {
     return Scaffold
       (
       drawer: sideNav(),
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text('Data Entry'),
+        backgroundColor: Colors.green,
 
       ),
       body: SingleChildScrollView(
@@ -91,7 +92,7 @@ class _DataEntryPageState extends State<DataEntryPage> {
                             context: context,
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                backgroundColor: Colors.green,
+                                backgroundColor: Colors.grey,
                                 title: Text("order"),
                                 content: Text("You'll be notified soon . "),
                                 actions: [

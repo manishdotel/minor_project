@@ -54,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text('Home Page'),
+        backgroundColor: Colors.green,
       ),
       body: Center(
         child: Text('business order items are displayed here'),
